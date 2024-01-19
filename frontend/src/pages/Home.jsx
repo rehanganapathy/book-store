@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Spinner from '../components/Spinner';
 import BooksCard from '../components/home/BooksCard';
+import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SearchBar from '../components/SearchBar';
 import Navbar from '../components/Navbar';
@@ -17,7 +18,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get('http://localhost:5555/books')
+      .get('https://book-store-phi-olive.vercel.app/books/')
       .then((response) => {
         setBooks(response.data.data);
         setLoading(false);

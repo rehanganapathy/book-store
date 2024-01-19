@@ -10,9 +10,10 @@ const URL = "mongodb+srv://rehan-ganapathy:reuse1234@cluster0.2pwie.mongodb.net/
 
 app.use(
   cors()
-  //   origin: "https://localhost:5555",
-  //   methods: ["GET", "POST", "PUT", "DELETE"],
-  //   allowedHeaders: ["Content-Type"],
+  //  origin: "https://book-store-kkb3.vercel.app/",
+   //  methods: ["GET", "POST", "PUT", "DELETE"],
+  //  allowedHeaders: ["Content-Type"],
+  //    credentials: true 
   //
 );
 
@@ -25,6 +26,7 @@ app.use("/books", booksRoute);
 // setting GET request on root ("/")
 app.get("/", (req, res) => {
   console.log(req);
+  res.send('Hello World')
   return res.status(200);
 });
 
