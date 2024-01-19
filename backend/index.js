@@ -10,8 +10,8 @@ const URL = "mongodb+srv://rehan-ganapathy:reuse1234@cluster0.2pwie.mongodb.net/
 
 app.use(
   cors()
-    origin: "https://book-store-kkb3.vercel.app/",
-     methods: ["GET", "POST", "PUT", "DELETE"],
+  //  origin: "https://book-store-kkb3.vercel.app/",
+   //  methods: ["GET", "POST", "PUT", "DELETE"],
   //   allowedHeaders: ["Content-Type"],
   //
 );
