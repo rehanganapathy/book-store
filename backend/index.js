@@ -25,6 +25,7 @@ app.use("/books", booksRoute);
 // setting GET request on root ("/")
 app.get("/", (req, res) => {
   console.log(req);
+  res.send('Hello World')
   return res.status(200);
 });
 
