@@ -26,5 +26,8 @@ npm install
 ```
 Do the same for backend, use ```npm run dev``` to start
 
-#Tests
+### Tests
 Use jest to run tests in the backend folder. 
+
+
+You can add authentication using jwt and deploy using vercel. 
