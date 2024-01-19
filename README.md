@@ -1,8 +1,4 @@
 
-React has been used, with nodejs for the backend, while the database is mongodb.
-
-
-
 # Book Store 
 
 A full stack app that lets you have add book collections.
@@ -30,3 +26,5 @@ npm install
 ```
 Do the same for backend, use ```npm run dev``` to start
 
+#Tests
+Use jest to run tests in the backend folder. 
