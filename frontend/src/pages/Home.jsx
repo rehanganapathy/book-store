@@ -3,7 +3,7 @@ import axios from 'axios';
 import Spinner from '../components/Spinner';
 //import BooksTable from '../components/home/BooksTable';
 import BooksCard from '../components/home/BooksCard';
-import Navbar from '../components/navbar';
+import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SearchBar from '../components/SearchBar';
 
