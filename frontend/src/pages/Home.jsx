@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Spinner from '../components/Spinner';
-//import BooksTable from '../components/home/BooksTable';
 import BooksCard from '../components/home/BooksCard';
-import Navbar from '../components/navbar';
 import Footer from '../components/Footer';
 import SearchBar from '../components/SearchBar';
+import Navbar from '../components/Navbar';
 
 const Home = () => {
   const [books, setBooks] = useState([]);
@@ -58,12 +57,8 @@ const Home = () => {
       <SearchBar handleSearch={handleSearch} />
       {loading ? (
         <Spinner />
-      ) : showType === 'table' ? (
-        <div style={{ margin: '30px auto', maxWidth: '80%' }}>
-          <BooksCard books={filteredBooks} />
-        </div>
       ) : (
-        <div style={{ margin: '30px auto', maxWidth: '90%' }}>
+        <div style={{ margin: '30px auto', maxWidth: showType === 'table' ? '80%' : '90%' }}>
           <BooksCard books={filteredBooks} />
         </div>
       )}

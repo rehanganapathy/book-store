@@ -10,16 +10,17 @@ const Navbar = ({ setShowType }) => {
   };
 
   return (
-    <AppBar position="static" className="bg-blue-500">
-      <Toolbar className="flex justify-between items-center">
-        <Link to="/" onClick={() => handleShowType('table')} className="flex items-center">
-          <Typography variant="h6" component="div" className="text-white mx-4">
+    <AppBar position="static" style={{ background: '#1976D2' }}>
+      <Toolbar style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Link to="/" onClick={() => handleShowType('table')} style={{ textDecoration: 'none', color: 'white', display: 'flex', alignItems: 'center' }}>
+          <Typography variant="h6" component="div" style={{ fontWeight: 'bold', marginRight: '10px', fontFamily: 'Montserrat, sans-serif' }}>
             Quill and Thrill
           </Typography>
         </Link>
 
-        <Link to="/books/create" className="text-white hover:text-gray-300">
-          <MdOutlineAddBox className="text-4xl" />
+        <Link to="/books/create" style={{ textDecoration: 'none', color: 'white', display: 'flex', alignItems: 'center', fontSize: '1.2rem', transition: 'color 0.3s' }} className="hover:text-gray-300">
+          <MdOutlineAddBox style={{ fontSize: '2rem', marginRight: '5px' }} />
+          Add Book
         </Link>
       </Toolbar>
     </AppBar>
