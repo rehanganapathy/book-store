@@ -6,7 +6,7 @@ import cors from "cors";
 
 // creating an express app
 const app = express();
-const URL = "mongodb+srv://rehan-ganapathy:reuse1234@cluster0.2pwie.mongodb.net/?retryWrites=true&w=majority";
+const URL = DATABASE_URL;
 
 app.use(
   cors()
